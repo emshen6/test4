@@ -20,6 +20,7 @@ export const Landing: React.FC = () => {
             <ContentWrapper>
                 <Header />
                 <FactoryImage />
+                <Footer />
             </ContentWrapper>
         </div>
     );
