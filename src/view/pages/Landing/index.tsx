@@ -1,13 +1,11 @@
 import React from 'react';
 import classNames from 'classnames';
 import styles from './index.module.scss';
-import Icon from '../../components/UI/Icon';
-import { ICON } from '../../components/UI/Icon/IconType.tsx';
 import { useGetProductsQuery } from '../../../core/api/product';
 import { FactoryImage } from '../../../assets/image/FactoryImage';
-import { ContentWrapper } from '../../components/ContentWrapper';
 import { Header } from '../../components/Header';
-import { Footer } from '../../components/Footer/index.tsx';
+import { Footer } from '../../components/Footer';
+import { About } from '../../components/About';
 import { Benefits } from '../../components/Benefits/index.tsx';
 
 const cx = classNames.bind(styles);
@@ -24,6 +22,7 @@ export const Landing: React.FC = () => {
                 <Header />
                 <FactoryImage />
                 <Benefits titles={titles} descriptions={descriptions} />
+                <About />
                 <Footer />
             </ContentWrapper>
         </div>
