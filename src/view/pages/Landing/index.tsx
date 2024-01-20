@@ -8,11 +8,14 @@ import { FactoryImage } from '../../../assets/image/FactoryImage';
 import { ContentWrapper } from '../../components/ContentWrapper';
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer/index.tsx';
+import { Benefits } from '../../components/Benefits/index.tsx';
 
 const cx = classNames.bind(styles);
 
 export const Landing: React.FC = () => {
     const { data } = useGetProductsQuery();
+    const titles = ['a', 'b', 'c', 'd'];
+    const descriptions = ['a', 'b', 'c', 'd'];
 
     console.log(data);
     return (
@@ -20,6 +23,7 @@ export const Landing: React.FC = () => {
             <ContentWrapper>
                 <Header />
                 <FactoryImage />
+                <Benefits titles={titles} descriptions={descriptions} />
                 <Footer />
             </ContentWrapper>
         </div>
