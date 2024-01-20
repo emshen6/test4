@@ -12,15 +12,19 @@ const cx = classNames.bind(styles);
 
 export const Landing: React.FC = () => {
     const { data } = useGetProductsQuery();
-
-    console.log(data);
+    const titles = ['a', 'b', 'c', 'd'];
+    const descriptions = ['a', 'b', 'c', 'd'];
     return (
         <div className={cx(styles.landing)}>
-            <Header />
-            <FactoryImage />
-            <About />
-            <CatalogPart />
-            <Footer />
+            <div className={styles.wrapper}>
+                <div>
+                    <Header />
+                    <FactoryImage />
+                </div>
+                    <About />
+                <CatalogPart />
+                <Footer />
+            </div>
         </div>
     );
 };
