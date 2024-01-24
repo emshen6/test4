@@ -21,7 +21,8 @@ export const Landing: React.FC = () => {
                     <Header />
                     <FactoryImage />
                 </div>
-                    <About />
+                <Benefits titles={titles} descriptions={descriptions} />
+                <About />
                 <CatalogPart />
                 <Footer />
             </div>
